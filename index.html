@@ -8,14 +8,37 @@
   
   <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
+    @font-face {
+      font-family: "Figtree";
+      src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format("truetype");
+    }
+
+    body {
+      margin: 0;
+      height: 100vh; /*make it 100% of the viewport height*/
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(47, 88%, 63%);
+      font-family: "Figtree", sans-serif;
+    }
+
+    .container {
+      width: 90vw;
+      background-color: hsl(0, 0%, 100%);
+    }
+
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
+  <main>
+    <div class="container">
   Learning
 
   Published 21 Dec 2023
@@ -25,6 +48,8 @@
   These languages are the backbone of every website, defining structure, content, and presentation.
 
   Greg Hooper
+    </div>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
