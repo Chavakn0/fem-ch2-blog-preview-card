@@ -27,7 +27,8 @@
     }
 
     .container {
-      width: min(327px, 384px); /*will two px units work?*/
+      width: clamp(327px, 87.2%, 384px); /* Q:Will two px units work? A:Nope */
+      height: clamp(501px, 62.6%, 522px);
       background-color: hsl(0, 0%, 100%);
       margin: auto, 24px;
       padding: 24px;
@@ -35,6 +36,12 @@
       border: 1px, solid, #111;
       border-radius: 20px;
       box-shadow: 8px 8px, 0px, 0px #000;
+    }
+
+    .container img {
+      width: auto;
+      height: 200px;
+      border-radius: 10px;
     }
 
 
@@ -45,6 +52,8 @@
 <body>
   <main>
     <div class="container">
+      <img src="./assets/images/illustration-article.svg" alt="illustration">
+
   Learning
 
   Published 21 Dec 2023
