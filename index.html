@@ -44,26 +44,56 @@
       border-radius: 10px;
     }
 
+    .subcontainer {
+      width: auto;
+      height: auto;
+      margin: 24px;
+      line-height: 150%;
+      letter-spacing: 0px;
+    }
+
+    .text-preset1 {
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    .text-preset2 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .text-preset3 {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .text-preset3-bold {
+      font-size: 14px;
+      font-weight: 800;
+    }
+
 
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  <main>
-    <div class="container">
-      <img src="./assets/images/illustration-article.svg" alt="illustration">
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-    </div>
+  <main class="container">
+    <img src="./assets/images/illustration-article.svg" alt="illustration">
+    <section aria-labelledby="content" class="subcontainer">
+      <article>
+        <h1 class="text-preset3-bold">Learning</h1>
+        <p class="text-preset3">Published 21 Dec 2023</p>
+      </article>
+      <article>
+        <h1 class="text-preset1">HTML & CSS foundations</h1>
+        <p class="text-preset2">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </article>
+    </section>
+    <section aria-labelledby="autor" class="subcontainer">
+      <img src="./assets/images/image-avatar.webp" alt="autor-icon">
+      <p class="text-preset3-bold">Greg Hooper</p>
+    </section>
   </main>
   
   <div class="attribution">
@@ -72,3 +102,4 @@
   </div>
 </body>
 </html>
+<>
