@@ -29,9 +29,9 @@
     .container {
       background-color: hsl(0, 0%, 100%);
       /*max-width: 384px;*/
-      width: min(327px, 50%, 384px); /* Q:Will two px units work? A:Nope */
+      width: clamp(279px, 90%, 336px); /* Q:Will two px units work? A:Nope */
       /*max-height: 522px;*/
-      height: min(501px, 50%, 522px);
+      height: clamp(453px, 90%, 474px);
       margin: auto 24px;
       padding: 24px;
       gap: 24px;
@@ -41,7 +41,7 @@
     }
 
     .container img {
-      width: max-content;
+      width: max(100%, 279px);
       height: 200px;
       border-radius: 10px;
     }
