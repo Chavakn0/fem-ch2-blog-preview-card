@@ -27,15 +27,15 @@
     }
 
     .container {
-      width: clamp(327px, 87.2%, 384px); /* Q:Will two px units work? A:Nope */
-      height: clamp(501px, 62.6%, 522px);
       background-color: hsl(0, 0%, 100%);
+      width: clamp(327px, 50%, 384px); /* Q:Will two px units work? A:Nope */
+      height: clamp(501px, 50%, 522px);
       margin: auto, 24px;
       padding: 24px;
       gap: 24px;
-      border: 1px, solid, #111;
       border-radius: 20px;
-      box-shadow: 8px 8px, 0px, 0px #000;
+      border: 1px, solid, #111;
+      box-shadow: 8px 8px, 0px, 5px #000;
     }
 
     .container img {
@@ -60,7 +60,7 @@
 
     .text-preset1 {
       font-size: 24px;
-      font-weight: 800;
+      font-weight: 700;
     }
 
     .text-preset2 {
@@ -76,7 +76,7 @@
 
     .text-preset3-bold {
       font-size: 14px;
-      font-weight: 800;
+      font-weight: 700;
     }
 
 
@@ -97,9 +97,8 @@
         <p class="text-preset2">These languages are the backbone of every website, defining structure, content, and presentation.</p>
       </article>
     </section>
-    <section aria-labelledby="autor" class="subcontainer">
-      <img src="./assets/images/image-avatar.webp" alt="autor-icon">
-      <p class="text-preset3-bold">Greg Hooper</p>
+    <section aria-labelledby="author" class="subcontainer">
+      <img src="./assets/images/image-avatar.webp" alt="author-icon"> <p class="text-preset3-bold">Greg Hooper</p>
     </section>
   </main>
   
