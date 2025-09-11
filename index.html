@@ -28,8 +28,10 @@
 
     .container {
       background-color: hsl(0, 0%, 100%);
-      width: clamp(327px, 50%, 384px); /* Q:Will two px units work? A:Nope */
-      height: clamp(501px, 50%, 522px);
+      /*max-width: 384px;*/
+      width: min(327px, 50%, 384px); /* Q:Will two px units work? A:Nope */
+      /*max-height: 522px;*/
+      height: min(501px, 50%, 522px);
       margin: auto, 24px;
       padding: 24px;
       gap: 24px;
