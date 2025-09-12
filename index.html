@@ -13,7 +13,6 @@
     @font-face {
       font-family: "Figtree";
       src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
-      src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format('truetype');
     }
 
     body {
@@ -66,6 +65,14 @@
       align-items: center;
     }
 
+    .minicontainer {
+      width: clamp(73px, 50% ,82px);
+      height: clamp(26px, 50%, 29px);
+      background-color: hsl(47, 88%, 63%);
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+
     .subcontainerb img {
       width: 32px;
       height: 32px;
@@ -76,6 +83,10 @@
       font-size: clamp(20px, 50%, 24px); 
       font-weight: 700;
       margin: 12px 0px;
+    }
+
+    .text-preset1:hover {
+      color: hsl(47, 88%, 63%);
     }
 
     .text-preset2 {
@@ -107,7 +118,7 @@
     <img src="./assets/images/illustration-article.svg" alt="illustration">
     <section aria-labelledby="content" class="subcontainer">
       <article>
-        <h1 class="text-preset3-bold">Learning</h1>
+        <h1 class="text-preset3-bold" class="minicontainer">Learning</h1>
         <p class="text-preset3">Published 21 Dec 2023</p>
       </article>
       <article>
