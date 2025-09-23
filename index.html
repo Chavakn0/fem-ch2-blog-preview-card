@@ -13,6 +13,7 @@
     @font-face {
       font-family: "Figtree";
       src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+      font-weight: 100 1000;
     }
 
     body {
@@ -88,7 +89,7 @@
     }
     
     .text-preset1 {
-      font-size: clamp(20px, 50%, 24px); 
+      font-size: min(20px, 24px); 
       font-weight: 700;
       margin: 12px 0px;
     }
@@ -99,20 +100,20 @@
     }
 
     .text-preset2 {
-      font-size: clamp(14px, 50%, 16px);
+      font-size: min(14px, 16px);
       font-weight: 500;
       color: #6b6b6b;
       margin: 12px 0px;
     }
 
     .text-preset3 {
-      font-size: clamp(12px, 50%, 14px);
+      font-size: min(12px, 14px);
       font-weight: 500;
       margin: 12px 0px;
     }
 
     .text-preset3-bold {
-      font-size: clamp(12px, 50%, 14px);
+      font-size: min(12px, 14px);
       font-weight: 700;
       margin: 12px 0px;
     }
